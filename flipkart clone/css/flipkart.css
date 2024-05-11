@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: white;
+}
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+nav {
+    display: flex;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+}
+
+.logo img {
+    width: 10vw;
+    margin: 0 3vw;
+}
+
+.searchicon {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 5vh;
+    width: 2vw;
+    margin: 0 0 0 0;
+    background-color: rgb(238, 238, 252);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.search {
+    display: flex;
+    
+}
+
+.search input {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 45vw;
+    height: 5vh;
+    margin: 0 1vw 0 0;
+    font-weight: lighter;
+    outline: none;
+    border: 2px rgb(255, 255, 255);
+    background-color: rgb(238, 238, 252);
+
+}
+
+.list ul {
+    display: flex;
+}
+
+.list ul li {
+    list-style: none;
+    padding: 0vh 4vh;
+
+}
+
+.list ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 2.5vh;
+}
+
+.list1 {
+    display: none;
+}
+
+.list ul li:hover .list1 {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+}
+
+.list ul li:hover .list1 ul {
+    display: block;
+    z-index: 2;
+
+}
+
+.list ul li:hover .list1 ul li {
+    padding: 10px;
+
+}
+
+.list ul li:hover .list1 ul li:hover {
+    background-color: rgb(253, 242, 242);
+}
+
+.list ul li:hover .list1 ul li:first-child {
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+.list ul li:hover .list1 ul li .sign {
+    display: inline;
+    margin-left: 3vw;
+    color: blue;
+}
+
+.list2 {
+    display: none;
+}
+
+.list ul li:hover .list2 {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 1300px;
+    background-color: white;
+}
+
+.list ul li:hover .list2 ul {
+    display: block;
+
+}
+
+.list ul li:hover .list2 ul li {
+    padding: 10px;
+
+}
+
+.list ul li:hover .list2 ul li:first-child {
+    border-top: 1px solid black;
+}
+
+.list ul li:hover .list2 ul li:hover {
+    background-color: rgb(253, 242, 242);
+}
+body
+{
+    background-color: rgb(223, 219, 219);
+}
+main {
+    height: 80vh;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 1%;
+    height: 140px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.container1 a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.container2 {
+    display: flex;
+    width: 1500px;
+    height: 230px;
+    z-index: 2;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b21b5be304d115cd.jpg?q=20);
+    margin-left: 1%;
+    margin-top: 1%;
+    animation: slider 9s ease infinite reverse both;
+
+}
+.container3
+{
+    width: 1500px;
+    height: 230px;
+    background-color: white;
+    margin-left: 1%;
+    margin-top: 1%;
+    overflow: hidden;
+    
+
+}
+.cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.cards2 a{
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b21b5be304d115cd.jpg?q=20);
+    }
+
+    35% {
+        background-image: url(https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/4eed11b0faee9cec.jpg?q=20);
+    }
+
+    75% {
+        background-image: url(https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/9f2d8a698cd97710.jpg?q=20);
+    }
+
+
+
+}
+
+footer {
+    height: 6vh;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    color: black;
+}
